@@ -1,0 +1,19 @@
+version: "3.0"
+
+services:
+  trace-source-test:
+    image: "trace:${TAG:-1.0.0}"
+    build:
+      context: ./ 
+      dockerfile: Dockerfile
+    restart: always
+    container_name: "trace_std_test"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro # 设置容器时区与宿主机保持一致
+      - /data/trace_test/logs:/usr/src/app/trace/logs
+      - /data/trace_test/data:/usr/src/app/trace/data
+      - /data/trace_test/resource:/usr/src/app/trace/resource
+    ports:
+      - 18076:18075
+    environment:
+      TZ: "Asia/Shanghai"

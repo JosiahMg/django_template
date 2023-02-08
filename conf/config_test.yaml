@@ -1,0 +1,14 @@
+# test config
+postgresql:
+  host: 139.196.39.124
+  port: 15432
+  user: postgres
+  password: postgres
+  db_name: slsl_dt_core_v2
+  type: com.zaxxer.hikari.HikariDataSource
+
+tdengine:
+  url: 47.100.103.233:6041 # TEST
+  user: digital
+  password: "!QAZ2wsx"
+  db_name: slsl_dt_v2

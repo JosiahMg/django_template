@@ -1,0 +1,38 @@
+######################
+# Intellij
+######################
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+######################
+# Mac OSX
+######################
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+######################
+# Python
+######################
+__pycache__/
+venv/
+*.pyc
+
+######################
+# Project
+######################
+#logs/
+*.log
+
+resource/cime/*.csv
+data/substation_cime/*.csv
+data/tmp_graph
+
+data/
+logs/
+app/main.py
